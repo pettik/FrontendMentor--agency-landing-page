@@ -38,7 +38,7 @@
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <button>Learn more</button>
+        <button class="transform__btn">Learn more</button>
       </div>
       <picture class="transform__image">
         <source
@@ -51,24 +51,157 @@
         />
       </picture>
     </section>
-    <!-- Stand out to the right audience Using a collaborative formula of designers,
-    researchers, photographers, videographers, and copywriters, we’ll build and
-    extend your brand in digital places. Learn more Graphic design Great design
-    makes you memorable. We deliver artwork that underscores your brand message
-    and captures potential clients’ attention. Photography Increase your
-    credibility by getting the most stunning, high-quality photos that improve
-    your business image. Client testimonials We put our trust in Sunnyside and
-    they delivered, making sure our needs were met and deadlines were always
-    hit. Emily R. Marketing Director Sunnyside’s enthusiasm coupled with their
-    keen interest in our brand’s success made it a satisfying and enjoyable
-    experience. Thomas S. Chief Operating Officer Incredible end result! Our
-    sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    Jennie F. Business Owner About Services Projects Contact -->
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
+    <section class="stand-out">
+      <div class="stand-out__content">
+        <h3>Stand out to the right audience</h3>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <button class="stand-out__btn">Learn more</button>
+      </div>
+      <picture class="stand-out__image">
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/images/desktop/image-stand-out.jpg"
+        />
+        <img src="./assets/images/mobile/image-stand-out.jpg" alt="Stand out" />
+      </picture>
+    </section>
+    <section class="services">
+      <div class="services__graphic">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/desktop/image-graphic-design.jpg"
+          />
+          <img src="./assets/images/mobile/image-graphic-design.jpg" alt="" />
+        </picture>
+        <div class="services__content">
+          <h4>Graphic design</h4>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div class="services__graphic">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/desktop/image-photography.jpg"
+          />
+          <img src="./assets/images/mobile/image-photography.jpg" alt="" />
+        </picture>
+        <div class="services__content">
+          <h4>Photography</h4>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials__content">
+        <h3>Client testimonials</h3>
+        <div class="testimonials__content__box">
+          <picture>
+            <img src="./assets/images/image-emily.jpg" />
+          </picture>
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+
+          <div class="testimonials__content__box__author">
+            <p class="testimonials__content__box__author__name">Emily R.</p>
+            <p class="testimonials__content__box__author__profession">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__content__box">
+          <picture>
+            <img src="./assets/images/image-thomas.jpg" />
+          </picture>
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+
+          <div class="testimonials__content__box__author">
+            <p class="testimonials__content__box__author__name">Thomas S.</p>
+            <p class="testimonials__content__box__author__profession">
+              Chief Operating Officer
+            </p>
+          </div>
+        </div>
+        <div class="testimonials__content__box">
+          <picture>
+            <img src="./assets/images/image-jennie.jpg" />
+          </picture>
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+
+          <div class="testimonials__content__box__author">
+            <p class="testimonials__content__box__author__name">Jennie F.</p>
+            <p class="testimonials__content__box__author__profession">
+              Business Owner
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/images/desktop/image-gallery-milkbottles.jpg"
+        />
+        <img
+          src="./assets/images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+        />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/images/desktop/image-gallery-orange.jpg"
+        />
+        <img src="./assets/images/mobile/image-gallery-orange.jpg" alt="" />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/images/desktop/image-gallery-cone.jpg"
+        />
+        <img src="./assets/images/mobile/image-gallery-cone.jpg" alt="" />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/images/desktop/image-gallery-sugarcubes.jpg"
+        />
+        <img src="./assets/images/mobile/image-gallery-sugarcubes.jpg" alt="" />
+      </picture>
+    </section>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="https://github.com/pettik">Petr Bednarski</a>.
+      </div>
     </footer>
+    <!--    
+      About Services Projects Contact -->
   </body>
 </html>
