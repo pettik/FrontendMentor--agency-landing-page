@@ -1,3 +1,24 @@
+:root {
+  /* Barvy */
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-red: hsl(7, 99%, 70%);
+  --color-cyan-dark: hsl(167, 40%, 24%);
+  --color-cyan-mid: hsl(168, 34%, 41%);
+  --color-cyan-light: hsl(167, 44%, 70%);
+  --color-blue-hero: hsl(198, 62%, 26%);
+  --color-blue-dark: hsl(212, 27%, 19%);
+  --color-blue-mid: hsl(213, 9%, 39%);
+  --color-blue-light: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Fonty */
+  --font-body: "Barlow", sans-serif;
+  --font-heading: "Fraunces", serif;
+
+  /* Velikosti */
+  --fs-base: 1.125rem; /* 18px */
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -72,4 +93,22 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* My styles */
+
+/* === HERO === */
+.hero {
+  background-color: hsl(198, 62%, 26%); /* záložní barva */
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__icon {
+  fill: hsl(167, 34%, 41%);
 }
