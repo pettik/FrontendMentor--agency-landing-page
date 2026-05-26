@@ -154,6 +154,111 @@ h6 {
   object-fit: cover;
 }
 
+/* === SEKCE TRANSFORM & STAND-OUT === */
+.transform,
+.stand-out {
+  display: flex;
+  flex-direction: column; /* mobil: pod sebou */
+}
+
+.transform__content,
+.stand-out__content {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.transform__title,
+.stand-out__title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-blue-dark);
+  margin-bottom: 1.5rem;
+}
+
+.transform__text,
+.stand-out__text {
+  font-family: var(--font-body);
+  color: var(--color-blue-mid);
+  margin-bottom: 2rem;
+}
+
+.transform__link,
+.stand-out__link {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-blue-dark);
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+/* Podtržení jako v designu */
+.transform__link::after,
+.stand-out__link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -8px;
+  right: -8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--color-yellow);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* === SERVICES === */
+.services__graphic,
+.services__photography {
+  position: relative; /* obrázek jako základ */
+}
+
+.services__graphic picture,
+.services__photography picture {
+  width: 100%;
+}
+
+.services__graphic picture img,
+.services__photography picture img {
+  width: 100%;
+  display: block;
+}
+
+.services__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.services__content__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services__content__text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Graphic design = zelený text */
+.services__graphic .services__content__title,
+.services__graphic .services__content__text {
+  color: var(--color-cyan-dark);
+}
+
+/* Photography = modrý text */
+.services__photography .services__content__title,
+.services__photography .services__content__text {
+  color: var(--color-blue-hero);
+}
+
 /* === FOOTER === */
 .footer__icon {
   fill: hsl(167, 34%, 41%);
