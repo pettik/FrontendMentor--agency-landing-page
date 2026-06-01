@@ -316,6 +316,66 @@ h6 {
   color: var(--color-blue-hero);
 }
 
+/* === TESTIMONIALS === */
+.testimonials {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: var(--color-white);
+}
+.testimonials__title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--color-blue-light);
+  margin-bottom: 4rem;
+}
+
+.testimonials__grid {
+  display: flex;
+  flex-direction: column; /* mobil: pod sebou */
+  gap: 4rem;
+}
+
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonials__content__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%; /* kruhový avatar */
+  object-fit: cover;
+}
+
+.testimonials__text {
+  font-family: var(--font-body);
+  color: var(--color-blue-mid);
+  line-height: 1.8;
+}
+
+.testimonials__author-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-blue-dark);
+  margin-bottom: 0.5rem;
+}
+
+.testimonials__author-role {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-blue-light);
+}
 /* === FOOTER === */
 .footer__icon {
   fill: hsl(167, 34%, 41%);
