@@ -329,20 +329,19 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: var(--color-blue-light);
-  margin-bottom: 4rem;
 }
 
-.testimonials__grid {
+.testimonials__content {
   display: flex;
   flex-direction: column; /* mobil: pod sebou */
   gap: 4rem;
 }
 
-.testimonials__item {
+.testimonials__content .testimonials__content__box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .testimonials__content__box {
@@ -364,14 +363,14 @@ h6 {
   line-height: 1.8;
 }
 
-.testimonials__author-name {
+.testimonials__content__box__author__name {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--color-blue-dark);
   margin-bottom: 0.5rem;
 }
 
-.testimonials__author-role {
+.testimonials__content__box__author__profession {
   font-family: var(--font-body);
   font-size: 0.85rem;
   color: var(--color-blue-light);
