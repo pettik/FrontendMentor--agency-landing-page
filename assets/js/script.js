@@ -15,5 +15,3 @@ mobileMenu.querySelectorAll("a").forEach((link) => {
     mobileMenu.classList.remove("is-open");
   });
 });
-
-console.log("test");
