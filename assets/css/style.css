@@ -454,9 +454,6 @@ footer {
   color: var(--color-cyan-dark);
   text-align: center;
   margin-top: 1rem;
-}
-
-.attribution {
   display: none;
   color: var(--color-cyan-dark);
 }
