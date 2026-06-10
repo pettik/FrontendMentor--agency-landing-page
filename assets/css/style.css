@@ -515,7 +515,18 @@ footer {
   .stand-out__image,
   .transform__content,
   .stand-out__content {
-    flex: 1;
+    flex: 0 0 50%; /* místo flex: 1 */
+  }
+  .transform__image,
+  .stand-out__image {
+    display: flex;
+  }
+
+  .transform__image img,
+  .stand-out__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .transform__content,
@@ -532,9 +543,50 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  /* --- SERVICES --- */
+  .services__content {
+    padding: 3rem 2.5rem;
+  }
+
+  .services__content__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services__content__text {
+    font-size: 1rem;
+    max-width: 30ch;
+    margin: 0 auto;
+  }
 
   /* --- GALLERY --- */
   .gallery {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* --- HERO --- */
+  .hero {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+
+  /* --- HERO --- */
+  .hero__title {
+    font-size: 4rem;
+    letter-spacing: 0.4em;
+    margin-top: 5rem;
+  }
+  /* --- TESTIMONIALS --- */
+  .testimonials {
+    padding: 6rem 2rem;
+  }
+
+  .testimonials__title {
+    margin-bottom: 4rem;
+  }
+
+  .testimonials__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
   }
 }
