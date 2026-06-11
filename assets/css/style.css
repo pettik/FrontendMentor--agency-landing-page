@@ -12,8 +12,8 @@
   --color-white: hsl(0, 0%, 100%);
 
   /* Fonty */
-  --font-body: "Barlow", sans-serif;
-  --font-heading: "Fraunces", serif;
+  --font-body: 'Barlow', sans-serif;
+  --font-heading: 'Fraunces', serif;
 
   /* Velikosti */
   --fs-base: 1.125rem; /* 18px */
@@ -136,7 +136,7 @@ h6 {
 
 /* Trojúhelníkový roh vpravo nahoře — detail z designu */
 .mobile-menu::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -2rem;
   right: 0;
@@ -181,7 +181,7 @@ h6 {
 .hero {
   position: relative;
   background-color: hsl(198, 62%, 26%); /* záložní barva */
-  background-image: url("../images/mobile/image-header.jpg");
+  background-image: url('../images/mobile/image-header.jpg');
   background-size: cover;
   background-position: center bottom;
   min-height: 100svh;
@@ -255,7 +255,7 @@ h6 {
 /* Podtržení jako v designu */
 .transform__link::after,
 .stand-out__link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -4px;
   left: -8px;
@@ -566,7 +566,7 @@ footer {
 
   /* --- HERO --- */
   .hero {
-    background-image: url("../images/desktop/image-header.jpg");
+    background-image: url('../images/desktop/image-header.jpg');
   }
 
   /* --- HERO --- */
@@ -587,6 +587,26 @@ footer {
   .testimonials__content {
     flex-direction: row;
     align-items: flex-start;
+    gap: 2rem;
+  }
+
+  /* --- TESTIMONIALS --- */
+  .testimonials {
+    padding: 6rem 4rem;
+  }
+
+  .testimonials__title {
+    margin-bottom: 4rem;
+  }
+
+  .testimonials__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .testimonials__content__box {
+    flex: 1;
     gap: 2rem;
   }
 }
