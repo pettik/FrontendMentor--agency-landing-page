@@ -559,6 +559,12 @@ footer {
     margin: 0 auto;
   }
 
+  .services__graphic picture img,
+  .services__photography picture img {
+    min-height: 500px;
+    object-fit: cover;
+  }
+
   /* --- GALLERY --- */
   .gallery {
     grid-template-columns: repeat(4, 1fr);
