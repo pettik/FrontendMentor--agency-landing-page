@@ -12,8 +12,8 @@
   --color-white: hsl(0, 0%, 100%);
 
   /* Fonty */
-  --font-body: 'Barlow', sans-serif;
-  --font-heading: 'Fraunces', serif;
+  --font-body: "Barlow", sans-serif;
+  --font-heading: "Fraunces", serif;
 
   /* Velikosti */
   --fs-base: 1.125rem; /* 18px */
@@ -43,6 +43,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* 6. Improve media defaults */
@@ -136,7 +137,7 @@ h6 {
 
 /* Trojúhelníkový roh vpravo nahoře — detail z designu */
 .mobile-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2rem;
   right: 0;
@@ -181,7 +182,7 @@ h6 {
 .hero {
   position: relative;
   background-color: hsl(198, 62%, 26%); /* záložní barva */
-  background-image: url('../images/mobile/image-header.jpg');
+  background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center bottom;
   min-height: 100svh;
@@ -255,7 +256,7 @@ h6 {
 /* Podtržení jako v designu */
 .transform__link::after,
 .stand-out__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: -8px;
@@ -482,8 +483,9 @@ footer {
   }
 
   .nav__links .nav__contact {
-    background: var(--color-white);
-    color: var(--color-blue-dark);
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
     font-family: var(--font-heading);
     font-weight: 700;
     text-transform: uppercase;
@@ -496,8 +498,8 @@ footer {
   }
 
   .nav__links .nav__contact:hover {
-    background: hsla(0, 0%, 100%, 0.25);
-    color: var(--color-white);
+    background: var(--color-white);
+    color: var(--color-blue-dark);
   }
 
   /* --- TRANSFORM & STAND-OUT --- */
@@ -572,14 +574,15 @@ footer {
 
   /* --- HERO --- */
   .hero {
-    background-image: url('../images/desktop/image-header.jpg');
+    background-image: url("../images/desktop/image-header.jpg");
   }
 
   /* --- HERO --- */
   .hero__title {
-    font-size: 4rem;
-    letter-spacing: 0.4em;
-    margin-top: 5rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.35em;
+    white-space: normal; /* zrušíme nowrap */
+    margin-top: 4rem;
   }
   /* --- TESTIMONIALS --- */
   .testimonials {
@@ -614,5 +617,37 @@ footer {
   .testimonials__content__box {
     flex: 1;
     gap: 2rem;
+  }
+}
+
+/* === DESKTOP (1440px+) === */
+@media (min-width: 1440px) {
+  /* --- NAVIGATION --- */
+  .nav {
+    padding: 2.5rem 3rem;
+  }
+
+  /* --- HERO --- */
+  .hero__title {
+    font-size: 4.5rem;
+    letter-spacing: 0.5em;
+    white-space: nowrap;
+    margin-top: 5rem;
+  }
+
+  /* --- TRANSFORM & STAND-OUT --- */
+  .transform__content,
+  .stand-out__content {
+    padding: 6rem 5rem;
+  }
+
+  .transform__title,
+  .stand-out__title {
+    font-size: 2.5rem;
+  }
+
+  /* --- TESTIMONIALS --- */
+  .testimonials {
+    padding: 8rem 10rem;
   }
 }
