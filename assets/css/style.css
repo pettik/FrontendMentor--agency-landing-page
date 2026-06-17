@@ -15,8 +15,41 @@
   --font-body: "Barlow", sans-serif;
   --font-heading: "Fraunces", serif;
 
-  /* Velikosti */
+  /* Velikosti - MOBILE (výchozí) */
   --fs-base: 1.125rem; /* 18px */
+  --fs-hero-title: 2.5rem;
+  --fs-section-title: 2rem;
+  --fs-services-title: 1.5rem;
+  --fs-services-text: 0.95rem;
+  --fs-testimonial-text: 1rem;
+  --fs-link: 0.9rem;
+
+  /* Letter spacing */
+  --ls-hero: 0.3em;
+}
+
+/* Velikosti - TABLET */
+@media (min-width: 768px) {
+  :root {
+    --fs-hero-title: 2.8rem;
+    --fs-section-title: 2.2rem;
+    --fs-services-title: 1.75rem;
+    --fs-services-text: 1rem;
+    --ls-hero: 0.35em;
+  }
+}
+
+/* Velikosti - DESKTOP */
+@media (min-width: 1440px) {
+  :root {
+    --fs-hero-title: 4.5rem;
+    --fs-section-title: 2.8rem;
+    --fs-services-title: 2rem;
+    --fs-services-text: 1.05rem;
+    --fs-testimonial-text: 1.1rem;
+    --fs-link: 1rem;
+    --ls-hero: 0.5em;
+  }
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -193,10 +226,10 @@ h6 {
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: var(--fs-hero-title);
   color: var(--color-white);
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: var(--ls-hero);
   text-align: center;
   margin-top: 3rem;
 }
@@ -228,7 +261,7 @@ h6 {
 .transform__title,
 .stand-out__title {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: var(--fs-section-title);
   color: var(--color-blue-dark);
   margin-bottom: 1.5rem;
 }
@@ -282,9 +315,10 @@ h6 {
 .services__graphic picture img,
 .services__photography picture img {
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   display: block;
 }
-
 .services__content {
   position: absolute;
   bottom: 0;
@@ -296,16 +330,15 @@ h6 {
 
 .services__content__title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: var(--fs-services-title);
   margin-bottom: 1rem;
 }
 
 .services__content__text {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: var(--fs-services-text);
   line-height: 1.6;
 }
-
 /* Graphic design = zelený text */
 .services__graphic .services__content__title,
 .services__graphic .services__content__text {
@@ -362,6 +395,7 @@ h6 {
 .testimonials__text {
   font-family: var(--font-body);
   color: var(--color-blue-mid);
+  font-size: var(--fs-testimonial-text);
   line-height: 1.8;
 }
 
@@ -643,7 +677,41 @@ footer {
 
   .transform__title,
   .stand-out__title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .transform__text,
+  .stand-out__text {
+    font-size: 1.1rem;
+    max-width: 40ch;
+    margin-bottom: 2.5rem;
+  }
+
+  /* --- SERVICES --- */
+  .services__graphic picture img,
+  .services__photography picture img {
+    min-height: 600px;
+  }
+
+  .services__content__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services__content__text {
+    font-size: 1rem;
+    max-width: 28ch;
+  }
+
+  /* --- TESTIMONIALS --- */
+  .testimonials__avatar {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .testimonials__text {
+    font-size: 1.1rem;
   }
 
   /* --- TESTIMONIALS --- */
