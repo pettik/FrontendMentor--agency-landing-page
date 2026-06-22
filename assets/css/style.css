@@ -23,7 +23,8 @@
   --fs-services-text: 0.95rem;
   --fs-testimonial-text: 1rem;
   --fs-link: 0.9rem;
-  --fs-transf-stand-link: 1rem /* Letter spacing */ --ls-hero: 0.3em;
+  --fs-transf-stand-link: 1rem;
+  --ls-hero: 0.3em;
 }
 
 /* Velikosti - TABLET */
@@ -486,7 +487,6 @@ footer {
 .attribution {
   font-family: var(--font-body);
   font-size: 0.75rem;
-  color: var(--color-cyan-dark);
   text-align: center;
   margin-top: 1rem;
   display: none;
@@ -584,12 +584,12 @@ footer {
   }
 
   .services__content__title {
-    font-size: 1.75rem;
+    font-size: var(--fs-services-title);
     margin-bottom: 1.5rem;
   }
 
   .services__content__text {
-    font-size: var(--fs-link);
+    font-size: var(--fs-services-text);
     max-width: 30ch;
     margin: 0 auto;
   }
@@ -617,19 +617,9 @@ footer {
     white-space: normal; /* zrušíme nowrap */
     margin-top: 4rem;
   }
-  /* --- TESTIMONIALS --- */
-  .testimonials {
-    padding: 6rem 2rem;
-  }
 
   .testimonials__title {
     margin-bottom: 4rem;
-  }
-
-  .testimonials__content {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
   }
 
   /* --- TESTIMONIALS --- */
@@ -694,12 +684,12 @@ footer {
   }
 
   .services__content__title {
-    font-size: 2rem;
+    font-size: var(--fs-services-title);
     margin-bottom: 1.5rem;
   }
 
   .services__content__text {
-    font-size: var(--fs-link);
+    font-size: var(--fs-services-text);
     max-width: 28ch;
   }
 
