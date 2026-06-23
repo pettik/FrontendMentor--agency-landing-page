@@ -269,7 +269,7 @@ body > *:not(.private-template) {
 .transform,
 .stand-out {
   display: flex;
-  flex-direction: column; /* mobil: pod sebou */
+  flex-direction: column-reverse;
 }
 
 .transform__content,
