@@ -283,16 +283,18 @@ body > *:not(.private-template) {
   font-family: var(--font-heading);
   font-size: var(--fs-section-title);
   color: var(--color-blue-dark);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
   line-height: 1.1;
   letter-spacing: -0.2px;
 }
 
 .transform__text,
 .stand-out__text {
+  font-size: var(--fs-base);
   font-family: var(--font-body);
   color: var(--color-blue-mid);
   margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
 .transform__link,
