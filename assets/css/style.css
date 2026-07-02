@@ -351,13 +351,13 @@ body > *:not(.private-template) {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 1.25rem;
 }
 
 .services__content__title {
   font-family: var(--font-heading);
   font-size: var(--fs-services-title);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .services__content__text {
