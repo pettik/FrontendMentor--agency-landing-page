@@ -21,7 +21,7 @@
   --fs-section-title: 2.1rem;
   --fs-services-title: 1.76rem;
   --fs-services-text: 0.95rem;
-  --fs-testimonial-text: 1rem;
+  --fs-testimonial-text: 1.1rem;
   --fs-link: 0.9rem;
   --fs-transf-stand-link: 1rem;
   --ls-hero: 0.3em;
@@ -351,7 +351,7 @@ body > *:not(.private-template) {
   left: 0;
   right: 0;
   text-align: center;
-  padding: 1.2rem 1.25rem;
+  padding: 1.2rem 1.25rem 3.8rem;
 }
 
 .services__content__title {
@@ -363,7 +363,7 @@ body > *:not(.private-template) {
 .services__content__text {
   font-family: var(--font-body);
   font-size: var(--fs-services-text);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 /* Graphic design = zelený text */
 .services__graphic .services__content__title,
@@ -390,6 +390,7 @@ body > *:not(.private-template) {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   color: var(--color-blue-light);
+  margin-bottom: 4rem;
 }
 
 .testimonials__content {
@@ -402,7 +403,7 @@ body > *:not(.private-template) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .testimonials__content__box {
