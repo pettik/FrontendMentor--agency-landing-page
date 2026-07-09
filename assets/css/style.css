@@ -379,7 +379,7 @@ body > *:not(.private-template) {
 
 /* === TESTIMONIALS === */
 .testimonials {
-  padding: 4rem 1.5rem;
+  padding: 4rem 1.5rem 5.5rem;
   text-align: center;
   background-color: var(--color-white);
 }
@@ -424,13 +424,14 @@ body > *:not(.private-template) {
   color: var(--color-blue-mid);
   font-size: var(--fs-testimonial-text);
   line-height: 1.8;
+  padding-inline: 0.4rem;
 }
 
 .testimonials__content__box__author__name {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--color-blue-dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .testimonials__content__box__author__profession {
