@@ -131,7 +131,7 @@ h6 {
 }
 
 /* My styles */
-.private-template {
+/* .private-template {
   display: block;
   position: absolute;
   top: 0;
@@ -143,7 +143,7 @@ h6 {
   background-image: url('../../design/mobile-design.jpg');
   z-index: -1;
   opacity: 100%;
-}
+} */
 
 body > *:not(.private-template) {
   opacity: 50%;
@@ -476,10 +476,6 @@ footer {
   fill: var(--color-cyan-dark);
 }
 
-.footer__logo {
-  width: 200px;
-}
-
 .footer__logo-svg {
   width: 100%;
   height: auto;
@@ -489,6 +485,7 @@ footer {
   padding: 0;
   display: flex;
   gap: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .footer__links a {
@@ -531,6 +528,21 @@ footer {
 
 /* === TABLET (768px+) === */
 @media (min-width: 768px) {
+  /* My styles */
+  /* .private-template {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px;
+    height: 4174px;
+    content: '';
+    background-image: url('../../design/desktop-design.jpg');
+    z-index: -1;
+    opacity: 100%;
+  } */
+
   /* --- NAVIGATION --- */
   .nav__hamburger {
     display: none;
