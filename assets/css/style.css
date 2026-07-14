@@ -12,8 +12,8 @@
   --color-white: hsl(0, 0%, 100%);
 
   /* Fonty */
-  --font-body: 'Barlow', sans-serif;
-  --font-heading: 'Fraunces', serif;
+  --font-body: "Barlow", sans-serif;
+  --font-heading: "Fraunces", serif;
 
   /* Velikosti - MOBILE (výchozí) */
   --fs-base: 1.125rem; /* 18px */
@@ -130,24 +130,9 @@ h6 {
   isolation: isolate;
 }
 
-/* My styles */
-/* .private-template {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 375px;
-  height: 5219px;
-  content: '';
-  background-image: url('../../design/mobile-design.jpg');
-  z-index: -1;
-  opacity: 100%;
-} */
-
-body > *:not(.private-template) {
+/* body > *:not(.private-template) {
   opacity: 50%;
-}
+} */
 
 /* === NAVIGATION === */
 .nav {
@@ -188,7 +173,7 @@ body > *:not(.private-template) {
 
 /* Trojúhelníkový roh vpravo nahoře — detail z designu */
 .mobile-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2rem;
   right: 0;
@@ -233,7 +218,7 @@ body > *:not(.private-template) {
 .hero {
   position: relative;
   background-color: hsl(198, 62%, 26%); /* záložní barva */
-  background-image: url('../images/mobile/image-header.jpg');
+  background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center bottom;
 
@@ -313,7 +298,7 @@ body > *:not(.private-template) {
 /* Podtržení jako v designu */
 .transform__link::after,
 .stand-out__link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: -8px;
@@ -528,21 +513,6 @@ footer {
 
 /* === TABLET (768px+) === */
 @media (min-width: 768px) {
-  /* My styles */
-  /* .private-template {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1440px;
-    height: 4174px;
-    content: '';
-    background-image: url('../../design/desktop-design.jpg');
-    z-index: -1;
-    opacity: 100%;
-  } */
-
   /* --- NAVIGATION --- */
   .nav__hamburger {
     display: none;
@@ -629,6 +599,7 @@ footer {
   /* --- SERVICES --- */
   .services__content {
     padding: 3rem 2.5rem;
+    margin-top: -23rem;
   }
 
   .services__content__title {
@@ -656,7 +627,7 @@ footer {
   /* --- HERO --- */
   .hero {
     min-height: 100svh;
-    background-image: url('../images/desktop/image-header.jpg');
+    background-image: url("../images/desktop/image-header.jpg");
   }
 
   /* --- HERO --- */
