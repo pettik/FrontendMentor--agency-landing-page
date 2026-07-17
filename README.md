@@ -13,7 +13,7 @@ Responsive landing page built from the provided design files. The solution follo
 ### Links
 
 - Solution (this repo): https://github.com/pettik/FrontendMentor--agency-landing-page
-- Live site: [pettik-agency-landing-page.netlify.app](pettik-agency-landing-page.netlify.app)
+- Live site: [https://pettik-agency-landing-page.netlify.app](https://pettik-agency-landing-page.netlify.app)
 
 ## How to run locally
 
