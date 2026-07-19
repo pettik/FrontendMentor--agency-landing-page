@@ -41,9 +41,15 @@
             />
           </svg>
         </div>
-        <button class="nav__hamburger" aria-label="Open menu">
+        <button
+          class="nav__hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <img src="./assets/images/icon-hamburger.svg" alt="" />
         </button>
+
         <!-- Menu -->
 
         <ul class="nav__links">
@@ -62,7 +68,7 @@
         </ul>
 
         <!-- Mobilní menu — přidej toto -->
-        <div class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
           <ul class="mobile-menu__links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
