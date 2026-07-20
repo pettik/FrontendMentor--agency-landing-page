@@ -1,54 +1,53 @@
-const hamburger = document.querySelector('.nav__hamburger');
-const mobileMenu = document.querySelector('.mobile-menu');
+const hamburger = document.querySelector(".nav__hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+const firstMenuLink = mobileMenu.querySelector("a");
 
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('is-open');
+// obsluha otevření menu
+function openMenu() {
+  mobileMenu.hidden = false;
+  mobileMenu.classList.add("is-open");
 
-  const isOpen = mobileMenu.classList.contains('is-open');
+  hamburger.setAttribute("aria-expanded", "true");
+  hamburger.setAttribute("aria-label", "Close menu");
 
-  // Stav tlačítka pro screen readery
-  hamburger.setAttribute('aria-expanded', isOpen);
-  hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  firstMenuLink?.focus();
+}
 
-  // Skrytí/zobrazení pro screen readery
-  mobileMenu.setAttribute('aria-hidden', !isOpen);
+function closeMenu(returnFocus = true) {
+  mobileMenu.classList.remove("is-open");
+  mobileMenu.hidden = true;
 
-  // Přesun fokusu na první odkaz v menu
+  hamburger.setAttribute("aria-expanded", "false");
+  hamburger.setAttribute("aria-label", "Open menu");
+
+  if (returnFocus) {
+    hamburger.focus();
+  }
+}
+
+hamburger.addEventListener("click", () => {
+  const isOpen = hamburger.getAttribute("aria-expanded") === "true";
+
   if (isOpen) {
-    const firstLink = mobileMenu.querySelector('a');
-    if (firstLink) firstLink.focus();
+    closeMenu();
+  } else {
+    openMenu();
   }
 });
 
-// Zavřít menu kliknutím na odkaz
-mobileMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.setAttribute('aria-label', 'Open menu');
+// zavření klávesou Escape
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    hamburger.getAttribute("aria-expanded") === "true"
+  ) {
+    closeMenu();
+  }
+});
+
+// zavření po kliknutí na odkaz
+mobileMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu(false);
   });
-});
-
-// Zavřít menu při Escape
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
-    mobileMenu.classList.remove('is-open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.setAttribute('aria-label', 'Open menu');
-    hamburger.focus(); // vrátit fokus na hamburger
-  }
-});
-
-// Zavřít mobilní menu při přechodu na tablet/desktop view
-const breakpoint = window.matchMedia('(min-width: 768px)');
-
-breakpoint.addEventListener('change', e => {
-  if (e.matches) {
-    mobileMenu.classList.remove('is-open');
-    mobileMenu.setAttribute('aria-hidden', 'true');
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.setAttribute('aria-label', 'Open menu');
-  }
 });
