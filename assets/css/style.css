@@ -160,6 +160,12 @@ h6 {
   align-items: center;
 }
 
+.nav__hamburger:focus-visible,
+.mobile-menu a:focus-visible {
+  outline: 3px solid var(--color-yellow);
+  outline-offset: 4px;
+}
+
 .mobile-menu {
   display: none; /* schované ve výchozím stavu */
   position: absolute;
